@@ -1,79 +1,42 @@
 
 
+/* Overall Site Stylings */
 
 html {
     font-size: 24px;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
     line-height: 1.5;
 }
 
-.container {
-    border: 1px solid black;
-}
-
-
-
-
-/* Header Section */
-
-.header-container{
-    border: 1px solid black;
-    display: flex;
-    height: 64px;
-    margin: 0 auto;
-    position: relative;
-    z-index: 1;
-    padding: 0rem 1rem;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-}
-
-.logo img {
-    height: 2.083rem;
-}
-
-.navigation {
-    display: flex;
-    align-items: center;
-}
-
-.navigation nav span {
-    margin: 0rem 0.333rem;
-}
-
-#colmar {
-    font-weight: bold;
-}
-
-#academy {
-    color: grey;
-}
+/* Font section */
 
 h1 {
     font-weight: bold;
     font-size: 2.5rem;
 }
 
-/* Banner Section */
-
-.banner-container {
-    display: flex;
-    align-items: center;
-    background-color: grey;
+h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
-.button {
-    background-color: darkgrey;
-    text-align: center;
-    color: white;
-    padding: 8px;
+h3 {
+    
+    font-size: 1.2rem;
 }
+
+p {
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Reused styling through all sections */
 
 .image-container {
     width: 60%;
@@ -88,14 +51,26 @@ h1 {
     width: 40%;
 }
 
+.aboutus-info h1, p {
+    padding: 32px 0px 24px 0px;
+}
+
 .info {
     padding: 16px;
     display: flex;
     flex-direction: column;
 }
 
+.info p, h2, a {
+    padding: 8px 0px;
+}
+
 .section {
     padding: 32px 0px;
+}
+
+.section-container .section:nth-child(2n+1) {
+    background-color: rgb(219, 217, 217);
 }
 
 .about-container,
@@ -125,6 +100,67 @@ h1 {
     text-align: center;
 }
 
+/* Header Section Specifics */
+
+.header-container{
+    border: 1px solid black;
+    display: flex;
+    height: 64px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    padding: 0rem 1rem;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.logo img {
+    height: 2.083rem;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation nav span {
+    margin: 0rem 0.333rem;
+}
+
+#colmar {
+    font-weight: bold;
+}
+
+#academy {
+    color: grey;
+}
+
+
+/* Banner Section Specifics */
+
+.banner-container {
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    background-color: rgb(109, 105, 105);
+    text-align: center;
+    color: white;
+    padding: 8px;
+}
+
+/* Courses Section Specifics */
+
+.courses-title {
+    text-align: center;
+}
+
 .courses-container {
     display: flex;
     flex-wrap: wrap;
@@ -133,20 +169,30 @@ h1 {
 }
 
 .courses {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: white;
     width: 30%;
     padding-bottom: 16px;
     margin: 16px;
+    height: auto;
 }
 
 .courses img {
     max-width: 100%;
 }
 
+/* Thesis Section Specifics */
+
+.thesis-title {
+    text-align: center;
+    padding: 32px 0px;
+}
+
 .media-container{
     width: 60%;
     margin: 0px 24px;
 }
+
+/* Footer Specifics */
 
 footer {
     font-size: 14px;
@@ -155,3 +201,10 @@ footer {
     border-top: 1px solid rgba(204, 204, 204, 0.75);
 }
 
+.copyright {
+    flex-grow: 1;
+}
+
+.legal span {
+    margin: 0px 10px;
+}
