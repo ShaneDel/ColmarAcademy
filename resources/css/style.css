@@ -15,7 +15,7 @@ body {
 
 h1 {
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 3.0rem;
 }
 
 h2 {
@@ -24,23 +24,19 @@ h2 {
 }
 
 h3 {
-    
     font-size: 1.2rem;
-}
-
-p {
-
 }
 
 a {
     text-decoration: none;
+    color: rgb(0, 153, 255);
 }
 
 /* Reused styling through all sections */
 
 .image-container {
     width: 60%;
-    margin: 32px 24px;
+    margin: 0px 24px 32px 24px;
 }
 
 .image-container img {
@@ -78,13 +74,13 @@ a {
     display: flex;
 }
 
-.section-bit {
+.aboutus-bit {
     display: flex;
     padding: 16px;
     border: 1px solid rgba(204, 204, 204, 0.75);
 }
 
-.section-bit .info {
+.aboutus-bit .info {
     width: 65%;
 }
 
@@ -148,12 +144,28 @@ a {
     align-items: center;
 }
 
+.banner-info {
+    padding: 50px 0px;
+}
+
 .button {
-    background-color: rgb(109, 105, 105);
+    background-color: rgb(106, 109, 105);
     text-align: center;
     color: white;
     padding: 8px;
+    font-size: 1.2rem;
 }
+
+/* About Us Specifics */
+
+.aboutus-info h1 {
+    font-size: 2.5rem;
+}
+
+.guest {
+    background-color: rgb(219, 217, 217);
+}
+
 
 /* Courses Section Specifics */
 
@@ -184,12 +196,26 @@ a {
 
 .thesis-title {
     text-align: center;
-    padding: 32px 0px;
+    padding: 0px 0px 32px 0px;
 }
 
 .media-container{
     width: 60%;
     margin: 0px 24px;
+}
+
+.thesis-bit {
+    display: flex;
+    padding: 16px;
+}
+
+.thesis-bit .info {
+    width: 65%;
+}
+
+.thesis-bit img {
+    width: 35%;
+    height: auto;
 }
 
 /* Footer Specifics */
