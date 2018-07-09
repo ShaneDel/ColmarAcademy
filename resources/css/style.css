@@ -1,10 +1,19 @@
+/* Chosen Fonts to work with */
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
 
 
 /* Overall Site Stylings */
 
 html {
     font-size: 24px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato';
 }
 
 body {
@@ -15,7 +24,7 @@ body {
 
 h1 {
     font-weight: bold;
-    font-size: 3.0rem;
+    font-size: 2.7rem;
 }
 
 h2 {
@@ -136,6 +145,10 @@ a {
     color: grey;
 }
 
+.phone-header {
+    display: none;
+}
+
 
 /* Banner Section Specifics */
 
@@ -192,6 +205,10 @@ a {
     max-width: 100%;
 }
 
+.mobile { 
+    display: none;
+}
+
 /* Thesis Section Specifics */
 
 .thesis-title {
@@ -233,4 +250,77 @@ footer {
 
 .legal span {
     margin: 0px 10px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 480px) {
+    
+    .header-container, .legal, .courses img, .courses .info p,
+    .thesis-container .info, .thesis-container .info-container,
+    .about-container .image-container, .desktop {
+        display: none;
+    }
+
+    .phone-header {
+        display: flex;
+        height: 64px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .section {
+        padding: 0px 8px 16px 8px;
+    }
+
+    .banner-container {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+
+    .image-container {
+        width: 100%;
+        margin: auto;
+    }
+
+    .info-container {
+        width: auto;
+    }
+
+    .courses-container {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .courses {
+        width: auto;
+        padding: 0px;
+        margin: 4px 0px;
+    }
+
+    .media-container {
+        width: 100%;
+        margin: auto;
+    }
+
+    .aboutus-bit {
+        flex-direction: column;
+        padding: 32px 16px;
+    }
+
+    .aboutus-bit .image {
+        width: auto;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .guest {
+        background-color: white;
+    }
+
+
 }
